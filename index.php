@@ -75,35 +75,11 @@
             </div>
         </div> -->
 
-        <!-- Summary Cards -->
-        <div class="row g-3 animate__animated animate__fadeInUp">
-            <div class="col-lg-4 col-md-6">
-                <div class="card text-center">
-                    <div class="card-body">
-            
-                        <h6 class="card-title text-primary">Earnings (Monthly)</h6>
-                        <h4>$40,000</h4>
-                    </div>
-                </div>
+       <!-- Summary Cards -->
+       
+            <div  id='dokter'>
+                <!-- jadawal dokter -->
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h6 class="card-title text-success">Earnings (Annual)</h6>
-                        <h4>$215,000</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h6 class="card-title text-warning">Pending Requests</h6>
-                        <h4>18</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Charts Section -->
         <div class="row g-3 mt-4">
@@ -129,7 +105,7 @@
             </div>
             <div class="col-lg-4 animate__animated animate__zoomIn">
                 <div class="card">
-                    <div class="card-header">Revenue Sources</div>
+                    <div class="card-header">Kelas Kamar Inap</div>
                     <div class="card-body">
                         <!-- Placeholder for Pie Chart -->
                         <div  id="kelas">
@@ -139,7 +115,7 @@
             </div>
         </div>
 
-        <!-- Table Section -->
+        <!-- Table Section
         <div class="row g-3 mt-4 animate__animated animate__fadeInUp">
             <div class="col-12">
                 <div class="card">
@@ -191,7 +167,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->
@@ -203,6 +179,20 @@
             function() { 
                 $('#data').load('data_bed.php').fadeIn("fast"); 
             }, 9000
+        ); 
+    </script>
+    <script type="text/javascript"> 
+        var auto_refresh = setInterval( 
+            function() { 
+                $('#kelas').load('kelas.php').fadeIn("fast"); 
+            }, 9000
+        ); 
+    </script>
+        <script type="text/javascript"> 
+        var auto_refresh = setInterval( 
+            function() { 
+                $('#dokter').load('dokter.php').fadeIn("fast"); 
+            }, 5000
         ); 
     </script>
    <script>
