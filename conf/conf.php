@@ -5,7 +5,7 @@
     
     $db_hostname    = "103.126.172.186";
     $db_username    = "rsby";
-    $db_password    = "rsbypass";
+    $db_password    = "rsbypassakaak";
     $db_name        = "rsby";
     define('USERHYBRIDWEB', 'yanghack');
     define('PASHYBRIDWEB', 'sialselamanya');
